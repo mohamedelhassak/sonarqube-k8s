@@ -7,6 +7,7 @@ metadata:
 spec:
   ports:
     - name: sonar
+      nodePort: 30765
       port: 80
       protocol: TCP
       targetPort: 9000
