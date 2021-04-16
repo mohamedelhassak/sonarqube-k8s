@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: sonar-extensions
+  name: sonar-extensions-pvc
   namespace: sonarqube
 spec:
   accessModes:
@@ -14,7 +14,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: sonarext-pv
+  name: sonar-extensions-pv
   namespace: sonarqube
   labels:
     type: local
